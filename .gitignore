@@ -1,0 +1,94 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv
+env.bak/
+venv.bak/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.sublime-project
+*.sublime-workspace
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.pytest_cache/
+.coverage
+
+# OS files
+.DS_Store
+Thumbs.db
+.directory
+
+# Node (if using Node in future)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Build artifacts
+dist/
+build/
+*.whl
+
+# Whisper cache
+~/.cache/whisper/
+
+# Playwright browser data
+.cache/ms-playwright/
+
+# Audio files
+*.wav
+*.mp3
+recordings/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Keep config but ignore user-specific values
+# (these should be added manually)
+backend/config/.env
+backend/config/contacts_personal.json

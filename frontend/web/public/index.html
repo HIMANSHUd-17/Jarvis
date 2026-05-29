@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JARVIS - Personal Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1 class="logo">JARVIS</h1>
+            <p class="tagline">Personal Intelligence System</p>
+        </header>
+
+        <!-- Main Display -->
+        <main class="main">
+            <!-- State Indicator -->
+            <div class="state-container">
+                <div class="status-indicator">
+                    <div class="status-light" id="statusLight"></div>
+                    <p class="status-text" id="statusText">Idle</p>
+                </div>
+            </div>
+
+            <!-- Animated Listening Visualization -->
+            <div class="visualizer-container">
+                <div class="audio-wave" id="audioWave">
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                    <div class="wave-bar"></div>
+                </div>
+                <div class="pulse-ring"></div>
+            </div>
+
+            <!-- User Input Display -->
+            <div class="chat-container">
+                <div class="chat-messages" id="chatMessages">
+                    <div class="welcome-message">
+                        <h2>Welcome to JARVIS</h2>
+                        <p>Your personal AI assistant is ready to help.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Control Panel -->
+            <div class="controls">
+                <button id="listenBtn" class="btn btn-primary">
+                    <span class="btn-icon">🎤</span>
+                    <span class="btn-text">Start Listening</span>
+                </button>
+                <button id="sendBtn" class="btn btn-secondary">
+                    <span class="btn-icon">📤</span>
+                    <span class="btn-text">Send Message</span>
+                </button>
+                <input type="text" id="inputText" class="input-field" placeholder="Type your message...">
+            </div>
+
+            <!-- Quick Actions -->
+            <div class="quick-actions">
+                <button class="action-btn" data-action="chrome">
+                    <span>🌐 Chrome</span>
+                </button>
+                <button class="action-btn" data-action="notepad">
+                    <span>📝 Notepad</span>
+                </button>
+                <button class="action-btn" data-action="calculator">
+                    <span>🧮 Calc</span>
+                </button>
+                <button class="action-btn" data-action="whatsapp">
+                    <span>💬 WhatsApp</span>
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p id="connectionStatus" class="connection-status">⚫ Connecting...</p>
+            <p class="version">v1.0.0</p>
+        </footer>
+    </div>
+
+    <script src="js/websocket-client.js"></script>
+    <script src="js/ui-controller.js"></script>
+</body>
+</html>

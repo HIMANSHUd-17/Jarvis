@@ -1,0 +1,14 @@
+{
+  "contacts": [
+    {
+      "name": "Mom",
+      "phone": "+1234567890",
+      "group": "family"
+    },
+    {
+      "name": "Office",
+      "phone": "+0987654321",
+      "group": "work"
+    }
+  ]
+}
